@@ -1,6 +1,9 @@
-import logo from './logo.svg';
+ import logo from './logo.svg';
 import './App.css';
 import Greet from './Greet';
+import Forms from './Forms/Forms';
+import Garage from './Garage/Garage';
+import Goals from './Goals/Goals';
 
 function App() {
     const myName = 'Julian';
@@ -11,21 +14,44 @@ function App() {
     const secondSchool = 'Julian high school';
     const secondAddress = 'Kagadi';
 
-    const thirdName = 'Fatimah';
-    const thirdSchool = 'Fatimah School';
+   const thirdName = 'Fatimah';
+   const thirdSchool = 'Fatimah School';
     const thirdAddress = 'Kampala';
 
 
-    return (
-    <div className="App">
+   return (
+  
+
+
+   <div className="App">
      
-     <h1>Hello, Welcome Here</h1>
-      <Greet name ={myName} age={23} school={school} address={address} />
-      <Greet name ={secondName} age={20} school={secondSchool} address={secondAddress} />
-      <Greet name ={thirdName} age={18} school={thirdSchool} address={thirdAddress} />
+   <h1>Hello, Welcome Here</h1>
+     <Greet name ={myName} age={23} school={school} address={address} />
+    <Greet name ={secondName} age={20} school={secondSchool} address={secondAddress} />
+     <Greet name ={thirdName} age={18} school={thirdSchool} address={thirdAddress} />
+
+     <div className='form'>
+     <h1> My Form </h1>
+     <Forms/>
+     </div>
+
+<div className='car'>
+     <Garage/>
+     </div>
+
+
+     <div className='ball'>
+     <h2> Goals scored </h2>
+
+     <Goals isGoal = {false}/>
+      <Goals isGoal = {true}/>
+     </div>
    </div>
-  );
-}
+   
+   
+
+     );
+    }
 
 export default App;
 // This is the main App component that renders the Greet component with different props
