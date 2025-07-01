@@ -14,8 +14,8 @@ function Forms() {
     };
 
     return (
-        <div className="forms-container">
-            <h2>Welcome to the Form Page</h2>
+        <div className="forms">
+            <h2>Welcome to the submission Form Page</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required /> <br/> <br/>
@@ -24,10 +24,11 @@ function Forms() {
                 <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required /> <br/> <br/>
 
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required/> <br/> <br/>
+                <input type='message' id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required/> <br/> <br/>
 
                 <button type="submit">Submit</button> <br/> <br/>
             </form>
         </div>
     );
 }
+export default Forms;

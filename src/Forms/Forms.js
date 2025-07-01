@@ -18,8 +18,7 @@ function Forms() {
                 <label htmlFor="message">Message:</label>
                 <input type="message" id="message" name="message" required/> <br/> <br/>
 
-                <button type="submit">Submit</button> <br/> <br/>
-            </form>
+              </form>
         </div>
     )
 }

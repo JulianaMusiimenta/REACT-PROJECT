@@ -1,9 +1,10 @@
- import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Greet from './Greet';
 import Forms from './Forms/Forms';
 import Garage from './Garage/Garage';
 import Goals from './Goals/Goals';
+import Subforms from './Forms/Subforms';
 
 function App() {
     const myName = 'Julian';
@@ -39,6 +40,9 @@ function App() {
      <Garage/>
      </div>
 
+    <div className='forms'>
+     <Subforms/>
+     </div>
 
      <div className='ball'>
      <h2> Goals scored </h2>
