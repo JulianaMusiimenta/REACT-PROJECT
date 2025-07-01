@@ -6,7 +6,7 @@ function Garage() {
     
     return (
         <div className="garage-container">
-            <h2>My Garage</h2>
+            <h2>Julian's Garage</h2>
             <ul>
                 {cars.map((car, index) => (
                     <li key={index}>{car}</li>

@@ -4,9 +4,12 @@ import './Forms.css';
 function Forms() {
     return(
         <div className="forms-container">
-            <h2>Welcome to the Form Page</h2>
+            <h2>Welcome to Julian's form Page</h2>
             <form>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">fistName:</label>
+                <input type="text" id="name" name="name" required /> <br/> <br/>
+               
+                <label htmlFor="name">lastName:</label>
                 <input type="text" id="name" name="name" required /> <br/> <br/>
 
                 <label htmlFor="email">Email:</label>

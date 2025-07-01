@@ -11,7 +11,7 @@ console.log (address, 'address');
    return (
     <div className="welcoming-card">
       <h1>Am  {name}</h1>
-      <p> {age} years old girl</p>
+      <p> {age} years old </p>
       <p> A student at {school}</p>
       <p>I stay in {address} with my beloved parents</p>
      </div>
